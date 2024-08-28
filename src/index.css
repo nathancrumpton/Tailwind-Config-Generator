@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Game';
+  src: url('/fonts/Game-font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
