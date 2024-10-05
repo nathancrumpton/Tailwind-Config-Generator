@@ -1,10 +1,12 @@
 import React from 'react';
-import TailwindConfigGen from './pages/TailwindConfigGen';
+import SetupInstructions from './SetupInstructions';
+import ContactAndSupport from './components/ContactAndSupport';
 
 function App() {
   return (
     <div className="App">
-      <TailwindConfigGen />
+      <SetupInstructions />
+      <ContactAndSupport />
     </div>
   );
 }

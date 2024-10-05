@@ -8,3 +8,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#1A202C] text-white;
+}
+
+/* Add any additional custom styles here */
