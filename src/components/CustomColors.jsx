@@ -29,7 +29,7 @@ const CustomColors = ({ colors, hexInput, variantInput, setHexInput, setVariantI
           disabled={!isButtonEnabled}
           className={`px-4 py-2 rounded-lg transition flex items-center justify-center text-sm sm:text-base text-gray-300 ${
             isButtonEnabled
-              ? 'bg-purple-600 text-[#1A202C] hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500'
+              ? 'bg-purple-600 text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500'
               : 'bg-transparent border border-purple-600 text-purple-600 cursor-not-allowed'
           }`}
         >

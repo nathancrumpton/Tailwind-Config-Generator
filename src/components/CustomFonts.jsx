@@ -31,8 +31,8 @@ const CustomFonts = ({ fontName, setFontName, editingFontIndex, updateFont, hand
           />
           <button
             onClick={() => fontName && fileInputRef.current.click()}
-            className={`px-4 py-2 rounded-lg transition text-gray-300 flex items-center justify-center text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-purple-500 ${
-              fontName ? 'bg-purple-600 text-[#1A202C] hover:bg-purple-700' : 'bg-transparent border border-purple-600 cursor-not-allowed'
+            className={`px-4 py-2 rounded-lg transition text-purple-600 flex items-center justify-center text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-purple-500 ${
+              fontName ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-transparent border border-purple-600 cursor-not-allowed'
             }`}
             disabled={!fontName}
           >
