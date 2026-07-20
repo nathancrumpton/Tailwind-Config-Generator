@@ -15,8 +15,8 @@ const CommandCard = ({ command, isFileContent = false }) => {
   };
 
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 shadow-md shadow-black/25 mt-2 w-full">
-      <div className="bg-gray-700 p-2 flex items-center justify-between">
+    <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800 shadow-xl shadow-black/25 mt-2 w-full">
+      <div className="bg-gray-800 p-2 flex items-center justify-between">
         <div className="flex space-x-2">
           <div className="w-3 h-3 rounded-full bg-red-500 flex items-center justify-center">
             <X size={8} className="text-gray-900" />
@@ -38,7 +38,7 @@ const CommandCard = ({ command, isFileContent = false }) => {
       </div>
       <div className="p-4 bg-gray-900 overflow-x-auto max-w-full">
         <pre className="text-gray-300 font-mono text-sm whitespace-pre-wrap break-all text-left">
-          {!isFileContent && <span className="text-purple-500">$ </span>}
+          {!isFileContent && <span className="text-blue-400">$ </span>}
           {command}
         </pre>
       </div>

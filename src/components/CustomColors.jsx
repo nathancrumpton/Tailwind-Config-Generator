@@ -15,22 +15,22 @@ const CustomColors = ({ colors, hexInput, variantInput, setHexInput, setVariantI
           placeholder="Hex value (e.g., #FF5733)"
           className={`flex-1 px-3 py-2 text-sm sm:text-base rounded-lg bg-gray-800 border shadow-md shadow-black/25 ${
             hexInput && !isValidHex ? 'border-red-500' : 'border-gray-700'
-          } text-white focus:border-blue-500 focus:outline-none transition`}
+          } text-white focus:border-blue-600 focus:outline-none transition`}
         />
         <input
           type="text"
           value={variantInput}
           onChange={(e) => setVariantInput(e.target.value)}
           placeholder="Color name (e.g., primary)"
-          className="flex-1 px-3 py-2 text-sm sm:text-base shadow-md shadow-black/25 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-blue-500 focus:outline-none transition"
+          className="flex-1 px-3 py-2 text-sm sm:text-base shadow-md shadow-black/25 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-blue-600 focus:outline-none transition"
         />
         <button
           onClick={addOrUpdateColor}
           disabled={!isButtonEnabled}
           className={`px-4 py-2 rounded-lg transition flex items-center justify-center text-sm sm:text-base text-gray-300 ${
             isButtonEnabled
-              ? 'bg-purple-600 text-white hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500'
-              : 'bg-transparent border border-purple-600 text-purple-600 cursor-not-allowed'
+              ? 'bg-gray-700 text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500'
+              : 'bg-transparent border border-gray-700 text-gray-500 cursor-not-allowed'
           }`}
         >
           {editingColorIndex !== null ? (

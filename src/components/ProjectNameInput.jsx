@@ -8,7 +8,7 @@ const ProjectNameInput = ({ projectName, handleProjectNameChange, isValidName })
       value={projectName}
       onChange={handleProjectNameChange}
       className={`w-full px-4 py-2 rounded-md bg-gray-800 text-white border shadow-md shadow-black/25 ${
-        isValidName ? 'border-gray-600 focus:border-blue-500' : 'border-red-500'
+        isValidName ? 'border-gray-600 focus:border-blue-600' : 'border-red-500'
       } focus:outline-none`}
       placeholder="my-tailwind-project"
     />

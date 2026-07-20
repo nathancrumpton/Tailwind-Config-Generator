@@ -1,16 +1,11 @@
-@font-face {
-  font-family: 'Game';
-  src: url('/fonts/Game-font.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
 
 body {
-  @apply bg-[#1A202C] text-white;
+  @apply bg-gray-950 text-white;
 }
-
-/* Add any additional custom styles here */

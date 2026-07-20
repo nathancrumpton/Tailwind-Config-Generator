@@ -9,7 +9,7 @@ const CustomFonts = ({ fontName, setFontName, editingFontIndex, updateFont, hand
         value={fontName}
         onChange={(e) => setFontName(e.target.value)}
         placeholder="Enter font family name"
-        className="flex-1 px-3 py-2 text-sm sm:text-base shadow-md shadow-black/25 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-blue-500 focus:outline-none transition"
+        className="flex-1 px-3 py-2 text-sm sm:text-base shadow-md shadow-black/25 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-blue-600 focus:outline-none transition"
       />
       {editingFontIndex !== null ? (
         <button
@@ -31,8 +31,8 @@ const CustomFonts = ({ fontName, setFontName, editingFontIndex, updateFont, hand
           />
           <button
             onClick={() => fontName && fileInputRef.current.click()}
-            className={`px-4 py-2 rounded-lg transition text-purple-600 flex items-center justify-center text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-purple-500 ${
-              fontName ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-transparent border border-purple-600 cursor-not-allowed'
+            className={`px-4 py-2 rounded-lg transition text-gray-300 flex items-center justify-center text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-gray-500 ${
+              fontName ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-transparent border border-gray-700 text-gray-500 cursor-not-allowed'
             }`}
             disabled={!fontName}
           >
